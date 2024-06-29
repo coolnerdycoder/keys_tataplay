@@ -1,9 +1,15 @@
 {
   "version": 2,
   "builds": [
-    { "src": "app.py", "use": "@vercel/python" }
+    {
+      "src": "keys.php",
+      "use": "@vercel/php"
+    }
   ],
   "routes": [
-    { "src": "/(.*)", "dest": "app.py" }
+    {
+      "src": "/keys.php",
+      "dest": "/keys.php"
+    }
   ]
 }
