@@ -3,7 +3,7 @@
   "builds": [
     {
       "src": "keys.php",
-      "use": "@vercel/php"
+      "use": "@vercel/static"
     }
   ],
   "routes": [
