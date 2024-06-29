@@ -1,4 +1,4 @@
-from flask import Flask, jsonify
+from flask import Flask, jsonify, request
 from flask_cors import CORS  # Import CORS from flask_cors module
 import json
 
@@ -18,13 +18,13 @@ def get_keys_by_channel_id(channel_id):
             try:
                 # Transform keys data into desired format
                 transformed_keys = {
-                    "keys": [{"kty": key.get("kty", "oct"), "k": key["k"], "kid": key["kid"]} for key in item["keys"]],
+                    "keys": [{"kty": key["kty"], "k": key["k"], "kid": key["kid"]} for key in item["keys"]],
                     "type": "temporary"
                 }
                 return jsonify(transformed_keys)
             except KeyError as e:
                 return jsonify({"error": f"Invalid keys format in keys.json: Missing key field ({str(e)})"}), 500  # Server error
-    
+
     return jsonify({"error": "Keys not found for this channel_id"}), 404
 
 if __name__ == '__main__':
