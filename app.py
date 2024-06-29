@@ -1,7 +1,9 @@
 from flask import Flask, jsonify
+from flask_cors import CORS  # Import CORS from flask_cors module
 import json
 
 app = Flask(__name__)
+CORS(app)  # Enable CORS for all origins
 
 # Load keys from keys.json file
 def load_keys():
