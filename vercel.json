@@ -1,7 +1,7 @@
 {
   "version": 2,
   "builds": [
-    { "src": "keys.php", "use": "@vercel/php" }
+    { "src": "keys.php", "use": "@vercel/static" }
   ],
   "routes": [
     { "src": "/keys.php", "dest": "/keys.php" }
