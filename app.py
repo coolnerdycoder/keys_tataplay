@@ -11,6 +11,16 @@ def load_keys():
     with open('keys.json', 'r') as file:
         return json.load(file)
 
+class CustomJSONEncoder(json.JSONEncoder):
+    def default(self, obj):
+        if isinstance(obj, dict):
+            return OrderedDict(
+                sorted(obj.items(), key=lambda t: ['kty', 'k', 'kid'].index(t[0]))
+            )
+        return super(CustomJSONEncoder, self).default(obj)
+
+app.json_encoder = CustomJSONEncoder
+
 @app.route('/keys/<channel_id>', methods=['GET'])
 def get_keys_by_channel_id(channel_id):
     keys_data = load_keys()
@@ -19,11 +29,7 @@ def get_keys_by_channel_id(channel_id):
             try:
                 # Transform keys data into desired format
                 transformed_keys = {
-                    "keys": [OrderedDict([
-                        ("kty", key["kty"]),
-                        ("k", key["k"]),
-                        ("kid", key["kid"])
-                    ]) for key in item["keys"]],
+                    "keys": item["keys"],
                     "type": "temporary"
                 }
                 return jsonify(transformed_keys)
