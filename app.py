@@ -29,7 +29,7 @@ def get_keys_by_channel_id(channel_id):
                     "type": "temporary"
                 }
                 return app.response_class(
-                    response=json.dumps(transformed_keys),
+                    response=json.dumps(transformed_keys, separators=(',', ':')),
                     mimetype='application/json'
                 )
             except KeyError as e:
