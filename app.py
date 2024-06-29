@@ -8,13 +8,13 @@ def load_keys():
     with open('keys.json', 'r') as file:
         return json.load(file)
 
-@app.route('/keys/<key_id>', methods=['GET'])
-def get_key(key_id):
-    keys = load_keys()
-    if key_id in keys:
-        return jsonify({key_id: keys[key_id]})
-    else:
-        return jsonify({"error": "Key not found"}), 404
+@app.route('/keys/<channel_id>', methods=['GET'])
+def get_keys_by_channel_id(channel_id):
+    keys_data = load_keys()
+    for item in keys_data:
+        if item['channel_id'] == channel_id:
+            return jsonify(item['keys'])
+    return jsonify({"error": "Keys not found for this channel_id"}), 404
 
 if __name__ == '__main__':
     app.run()
