@@ -2,7 +2,7 @@ name: Update keys.json
 
 on:
   schedule:
-    - cron: '*/20 * * * *'  # Runs every 10 minutes
+    - cron: '0 */2 * * *'  # Runs every 2 hours
   workflow_dispatch:
 
 jobs:
