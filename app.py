@@ -18,7 +18,7 @@ def get_keys_by_channel_id(channel_id):
             try:
                 # Transform keys data into desired format
                 transformed_keys = {
-                    "keys": [{"kty": key["kty"], "k": key["k"], "kid": key["kid"]} for key in item["keys"]],
+                    "keys": [{"kty": key.get("kty", "oct"), "k": key["k"], "kid": key["kid"]} for key in item["keys"]],
                     "type": "temporary"
                 }
                 return jsonify(transformed_keys)
