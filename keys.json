@@ -157,8 +157,8 @@
     "keys": [
       {
         "kty": "oct",
-        "k": "DwL0yVL7s0SNGRd6Krsmnw",
-        "kid": "5rxpqPUPU62Ek+f7b2qQHg"
+        "k": "lLFz2tYmhuRB0CnxSxucXg",
+        "kid": "dFB009CzXIe972W6wmNW5Q"
       }
     ],
     "type": "temporary",
@@ -168,7 +168,7 @@
     "keys": [
       {
         "kty": "oct",
-        "k": "DwL0yVL7s0SNGRd6Krsmnw",
+        "k": "lLFz2tYmhuRB0CnxSxucXg",
         "kid": "/PkBJwRfXtq8XZSpMvXG/g"
       }
     ],
@@ -1609,28 +1609,6 @@
     "keys": [
       {
         "kty": "oct",
-        "k": "A48JH+t7ChHaeKwGpTP4+A",
-        "kid": "rYxSlnIXWa6+4XQXL97drg"
-      }
-    ],
-    "type": "temporary",
-    "channel_id": "235"
-  },
-  {
-    "keys": [
-      {
-        "kty": "oct",
-        "k": "A48JH+t7ChHaeKwGpTP4+A",
-        "kid": "sX15t2IeXkavQSCKZJYECg"
-      }
-    ],
-    "type": "temporary",
-    "channel_id": "235"
-  },
-  {
-    "keys": [
-      {
-        "kty": "oct",
         "k": "T0wMvBXw2Z8jMmoPA8RWHQ",
         "kid": "6QKMHORiX06RguZphT1BQQ"
       }
@@ -2424,7 +2402,7 @@
       {
         "kty": "oct",
         "k": "tepA9LzU4EvpM55+hx043g",
-        "kid": "fI8Oos07XJiDjYe1/6Chtw"
+        "kid": "WKG7A45KXz+84B2AMefxfQ"
       }
     ],
     "type": "temporary",
