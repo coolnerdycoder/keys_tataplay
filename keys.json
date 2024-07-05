@@ -201,8 +201,8 @@
     "keys": [
       {
         "kty": "oct",
-        "k": "S5d+5YWZvneyyLM/zdV9VA",
-        "kid": "Z5tUHSRfWhesrHxblO/gTA"
+        "k": "HdRH+ZOD7FnYig0y1FOj9w",
+        "kid": "wsvyonOOWXKZttHAPPoGfQ"
       }
     ],
     "type": "temporary",
@@ -212,7 +212,7 @@
     "keys": [
       {
         "kty": "oct",
-        "k": "S5d+5YWZvneyyLM/zdV9VA",
+        "k": "HdRH+ZOD7FnYig0y1FOj9w",
         "kid": "/PkBJwRfXtq8XZSpMvXG/g"
       }
     ],
