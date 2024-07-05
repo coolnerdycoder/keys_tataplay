@@ -201,8 +201,8 @@
     "keys": [
       {
         "kty": "oct",
-        "k": "/FL8+Q7rjh/kydYq6DdCJA",
-        "kid": "q7wTydCwUaWEB0WEUygx/g"
+        "k": "itTmTYHbMIhifqwIijRITQ",
+        "kid": "Ul1u7VAzXqelbc8nIuQrvg"
       }
     ],
     "type": "temporary",
@@ -212,7 +212,7 @@
     "keys": [
       {
         "kty": "oct",
-        "k": "/FL8+Q7rjh/kydYq6DdCJA",
+        "k": "itTmTYHbMIhifqwIijRITQ",
         "kid": "/PkBJwRfXtq8XZSpMvXG/g"
       }
     ],
@@ -6560,7 +6560,7 @@
       {
         "kty": "oct",
         "k": "vKOh3qP4O3nSWoPkIn0pAA",
-        "kid": "tycXOGolWrKCVBKdybd3kA"
+        "kid": "yGOJJcuSU6a7GeVevDUuyg"
       }
     ],
     "type": "temporary",
@@ -8325,28 +8325,6 @@
     ],
     "type": "temporary",
     "channel_id": "597"
-  },
-  {
-    "keys": [
-      {
-        "kty": "oct",
-        "k": "Q0706hnC2UTOxDXOzBM4CQ",
-        "kid": "vk2smAl8XDCtggrsrk8tUA"
-      }
-    ],
-    "type": "temporary",
-    "channel_id": "978"
-  },
-  {
-    "keys": [
-      {
-        "kty": "oct",
-        "k": "Q0706hnC2UTOxDXOzBM4CQ",
-        "kid": "l7yg8M3YUpWs/TC/e6EZhw"
-      }
-    ],
-    "type": "temporary",
-    "channel_id": "978"
   },
   {
     "keys": [
