@@ -1,9 +1,17 @@
 {
   "version": 2,
-  "builds": [
-    { "src": "keys.php", "use": "@vercel/static" }
-  ],
+  "functions": {
+    "api/*.php": {
+      "runtime": "vercel-php@0.7.1"
+    }
+  },
   "routes": [
-    { "src": "/keys.php", "dest": "/keys.php" }
+    {
+      "src": "/(.*)",
+      "dest": "/api/tpck.php?id=$1",
+      "headers": {
+        "Cache-Control": "max-age=20, public"
+      }
+    }
   ]
 }
